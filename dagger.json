@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "engineVersion": "v0.14.0",
+  "sdk": "go",
+  "exclude": [
+    ".devenv",
+    ".direnv",
+    ".github",
+    "go.work",
+    "go.work.sum"
+  ],
+  "dependencies": [
+    {
+      "name": "aws-cli",
+      "source": "github.com/sagikazarmark/daggerverse/aws-cli@aws-cli/v0.2.0",
+      "pin": "9ee6739db1b1cc4c806ed9389ecd534bf9f5705a"
+    },
+    {
+      "name": "go",
+      "source": "github.com/sagikazarmark/daggerverse/go@go/v0.9.0",
+      "pin": "d9ba06776c4c1ccf6f329bd862b9b439c4582ab6"
+    }
+  ],
+  "source": ".dagger"
+}
