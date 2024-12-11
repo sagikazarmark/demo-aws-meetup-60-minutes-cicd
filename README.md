@@ -46,5 +46,5 @@ just teardown
 ```
 
 ```shell
-aws iam create-role --role-name AppRunnerECRAccessRole
+aws iam delete-role --role-name AppRunnerECRAccessRole
 ```
