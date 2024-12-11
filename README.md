@@ -9,7 +9,7 @@ The demo uses AWS AppRunner and ECR for deploying a simple application.
 - AWS account access
 - AWS CLI configured (preferably using environment variables in `.env.local`)
 - [Dagger](https://docs.dagger.io/quickstart/cli) installed
-- [just](https://just.systems/man/en/packages.html) installed (see [justfile][justfile] if you want to run commands directly)
+- [just](https://just.systems/man/en/packages.html) installed (see [justfile](justfile) if you want to run commands directly)
 
 > [!TIP]
 > Install Nix and Direnv to get Dagger and Go configured.
@@ -46,5 +46,6 @@ just teardown
 ```
 
 ```shell
+aws iam delete-role-policy --role-name AppRunnerECRAccessRole --policy-name ECRAccessPolicy
 aws iam delete-role --role-name AppRunnerECRAccessRole
 ```
